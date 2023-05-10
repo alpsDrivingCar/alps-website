@@ -5,15 +5,13 @@
 
 To install the project dependencies, run the following command:
 
-```bash
+```bash```
 npm install
-
-
 
 ## Development
 
 To start the development server, use the following command:
 
 
-```bash
+```bash```
 npm run dev 
