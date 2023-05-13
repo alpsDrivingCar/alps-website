@@ -1,0 +1,75 @@
+.landing {
+  position: relative;
+  height: calc(100vh);
+  width: 100vw;
+  @media (max-width: 767px) {
+    padding-top: 80px;
+    height: auto;
+  }
+}
+.landing .container {
+  padding-bottom: 120px;
+  height: 100%;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.landing::before {
+  content: '';
+  position: absolute;
+  background-color: $mainColor;
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+  left: 400px;
+  top: -1800px;
+  transform: translate(300px, 500px);
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.landing .text {
+  flex: 1; // to make the text take same size same image
+}
+.landing .text .text-heading {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  max-width: 80%;
+  margin: 0;
+  letter-spacing: -2px;
+  @media (max-width: 767px) {
+    font-size: 33px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.text-heading span {
+  color: $mainColor;
+}
+
+.landing .text .text-description {
+  opacity: 0.4;
+  margin-left: 15px;
+  line-height: 1.9;
+  font-size: 23px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 700px;
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+.landing .image img {
+  max-width: 600px;
+  width: 100%;
+}
+.image {
+  z-index: 10;
+}
+.button .entry-btn {
+  width: 200px;
+  margin: 0 20px;
+}

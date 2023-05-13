@@ -1,15 +1,87 @@
 .header {
-  .header-container {
-    display: flex;
-  }
+  background-color: #fff;
+  box-shadow: $mainShadow;
+  position: relative;
 }
+
 .logo {
-  width: 30%;
-  h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 69px;
+}
+
+.nav-main {
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+}
+
+.nav-main > li > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: $mainTransition all;
+  padding: 0 20px;
+  height: 69px;
+  color: #000;
+  font-weight: 400;
+}
+
+.nav-main > li > a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $mainColor;
+  transform: scaleX(0);
+  transition: $mainTransition all;
+  transform-origin: left;
+}
+
+.nav-main > li > a:hover {
+  color: $mainColor;
+}
+.nav-main > li > a:hover::before {
+  transform: scaleX(1);
+  transition: $mainTransition all;
+}
+
+@media (max-width: 767px) {
+  .header .container {
+    justify-content: space-between;
+  }
+  .nav-main {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateX(-200px);
+    visibility: hidden;
+    transition: $mainTransition transform;
+    background-color: #f1f1f1;
+  }
+  .nav-main > li {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  .nav-main > li > a::before {
+    display: none;
+  }
+  .nav-main > li > a:hover {
+    color: $mainColor;
+    background-color: initial;
   }
 }
-.navbar {
-  width: 70%;
-  li {
-  }
+
+.show-nav {
+  transform: translateX(0);
+  visibility: visible;
 }

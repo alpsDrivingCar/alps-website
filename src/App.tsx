@@ -1,27 +1,24 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState,AppDispatch } from './store/index';
+//import { useEffect } from 'react';
+//import { useDispatch, useSelector } from 'react-redux';
+//import { RootState,AppDispatch } from './store/index';
+//import { fetchCount } from './store/counter/counterApi';
 import Header from './components/layout/header';
-import { fetchCount } from './store/counter/counterApi';
+import Landing from './components/homePage/landing';
+import HotOffer from './components/homePage/HotOffer';
 function App() {
-  const dispatch = useDispatch<AppDispatch>();
-  const counter:number = useSelector((state:RootState) => state.count.count);
+  //const dispatch = useDispatch<AppDispatch>();
+  //const counter:number = useSelector((state:RootState) => state.count.count);
 
-  useEffect(()=>{
-    dispatch(fetchCount())
-
-  },[dispatch])
-  
+  // useEffect(()=>{
+  //   dispatch(fetchCount())
+  // },[dispatch])
 
   return (
     <>
-      <div>
-        <Header />
-        {counter}
-
-      </div>
+      <Header/>
+      <Landing/>
+      <HotOffer/>
     </>
   )
 }
-
 export default App
