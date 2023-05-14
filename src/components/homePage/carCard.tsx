@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+// ts-ignore
 import { Navigation, Pagination } from 'swiper';
 import 'swiper/css/pagination';
 import 'swiper/css';
