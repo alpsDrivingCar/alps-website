@@ -5,6 +5,7 @@
 import Header from './components/layout/header';
 import Landing from './components/homePage/landing';
 import HotOffer from './components/homePage/HotOffer';
+import CarCard from './components/homePage/carCard';
 function App() {
   //const dispatch = useDispatch<AppDispatch>();
   //const counter:number = useSelector((state:RootState) => state.count.count);
@@ -18,6 +19,7 @@ function App() {
       <Header/>
       <Landing/>
       <HotOffer/>
+      <CarCard/>
     </>
   )
 }

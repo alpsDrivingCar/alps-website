@@ -7,7 +7,7 @@ const HotOffer = ()=>{
       <div className="row g-5">
         <div className="col-md-6 position-relative">
           <div className="container-card w-100">
-            <div className="header-card d-flex align-items-start justify-content-between py-5 px-4">
+            <div className="header-card d-flex align-items-start justify-content-between py-4 px-4">
               <div className="header-text">
                 <h3>Updating skills</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas?</p>
@@ -25,7 +25,7 @@ const HotOffer = ()=>{
                   </div>
                   <div className='text-list mx-3'>
                     <h6>Learn</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto nihil numquam, eaque vero vel!.</p>
                   </div>
                 </li>
                 <li className='d-flex'>
@@ -45,7 +45,7 @@ const HotOffer = ()=>{
                   </div>
                   <div className='text-list mx-3'>
                     <h6>Learn</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto nihil numquam, eaque vero vel!.</p>
                   </div>
                 </li>
                 <li className='d-flex'>
@@ -61,7 +61,7 @@ const HotOffer = ()=>{
               </ul>
             </div>
             <div className='more-details  px-5'>
-              <p className='price fw-bold fs-3 mx-5'>48$</p>
+              <p className='price fw-bold fs-3'>48$</p>
               <button className='entry-btn'>Entry </button>
             </div>
            
@@ -69,7 +69,7 @@ const HotOffer = ()=>{
         </div>
         <div className="col-md-6 position-relative">
           <div className="container-card w-100">
-            <div className="header-card d-flex align-items-start justify-content-between py-5 px-4">
+            <div className="header-card d-flex align-items-start justify-content-between py-4 px-4">
               <div className="header-text">
                 <h3>Updating skills</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas?</p>
@@ -87,7 +87,7 @@ const HotOffer = ()=>{
                   </div>
                   <div className='text-list mx-3'>
                     <h6>Learn</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto nihil numquam, eaque vero vel!.</p>
                   </div>
                 </li>
                 <li className='d-flex'>
@@ -107,7 +107,7 @@ const HotOffer = ()=>{
                   </div>
                   <div className='text-list mx-3'>
                     <h6>Learn</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto nihil numquam, eaque vero vel!.</p>
                   </div>
                 </li>
                 <li className='d-flex'>
@@ -123,12 +123,14 @@ const HotOffer = ()=>{
               </ul>
             </div>
             <div className='more-details  px-5'>
-              <p className='price fw-bold fs-3 mx-5'>48$</p>
+              <p className='price fw-bold fs-3'>48$</p>
               <button className='entry-btn'>Entry </button>
             </div>
            
           </div>
         </div>
+      
+      
       </div>
     </div>
   )

@@ -5,20 +5,22 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #eee;
 }
-
+// start hot offer
 .hot-offer {
   padding: 20px 0;
 }
 
 .container-card {
   box-shadow: $mainShadow;
+  background-color: #eee;
 }
 
 .header-card {
   .header-text {
     h3 {
-      font-size: 30px;
+      font-size: 25px;
       text-transform: uppercase;
       font-weight: bold;
       max-width: 80%;
@@ -50,21 +52,33 @@ body {
   }
   .text-list {
     h6 {
+      margin: 0;
       font-size: 22px;
       font-weight: bold;
-      letter-spacing: 1px;
     }
     p {
-      max-width: 90%;
+      color: rgba(#000, 0.6);
+      margin-left: 8px;
+      font-size: 14px;
     }
   }
 }
 
 .more-details {
-  padding: 20px 0;
+  padding: 10px 0;
   .entry-btn {
-    width: 200px;
-    font-size: 20px;
-    height: 60px;
+    font-size: 17px;
+    width: 150px;
+    border-radius: 1px;
   }
 }
+
+//end hot offer
+
+//start car card
+
+.car-card {
+  padding-top: 40px;
+}
+
+//end car card

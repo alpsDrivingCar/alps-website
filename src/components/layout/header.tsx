@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <div className='container d-flex align-items-center'>
+      <div className='container-fluid d-flex align-items-center'>
         <a className='logo' href='#' >
           <img src= {logo} width='100' />
         </a>
