@@ -1,25 +1,30 @@
 import car from '/images/car.png'
+import circle from '/images/circle.svg';
 const Landing = ()=>{
   return (
-    <div className='landing'>
-      <div className='container d-flex align-items-center'>
-        <div className='text'>
-          <h1 className='text-heading' >welcome to <span>
+    <>   
+      <img src ={circle} alt ='cicle image' className='d-sm-none cirlce' />
+
+      <div className='landing'>
+        <div className='container d-flex align-items-center'>
+          <div className='text'>
+            <h1 className='text-heading' >welcome to <span>
           alps
-          </span> driving school</h1>
-          <p className='text-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reiciendis, dolore nihil blanditiis aperiam deserunt..</p>
-          <div className='button d-flex align-content-center'>
-            <button className='entry-btn'>Entry</button>
+            </span> driving school</h1>
+            <p className='text-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reiciendis, dolore nihil blanditiis aperiam deserunt..</p>
+            <div className='button d-flex align-content-center'>
+              <button className='entry-btn'>Entry</button>
 
+            </div>
           </div>
-        </div>
-        <div className='image'>
-          <img src ={car} />
-        </div>
+          <div className='image'>
+            <img src ={car} />
+          </div>
 
 
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

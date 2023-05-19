@@ -1,6 +1,11 @@
 .header {
   position: relative;
 }
+.container-fluid {
+  @media (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
 
 .logo {
   display: flex;

@@ -2,6 +2,7 @@
 @import '../layout/grid';
 @import '../layout/grid';
 @import '../layout/landing';
+@import '../layout/footer';
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -9,12 +10,23 @@ body {
 }
 // start hot offer
 .hot-offer {
-  padding: 20px 0;
+  padding: 50px 0;
+  overflow-x: auto;
+  margin: 0 auto;
+
+  @media (max-width: 992px) {
+    width: 100% !important;
+    margin: 10px;
+  }
+  @media (max-width: 767px) {
+    justify-content: flex-start !important;
+  }
 }
 
 .container-card {
   box-shadow: $mainShadow;
   background-color: #eee;
+  min-width: 350px;
 }
 
 .header-card {
@@ -33,13 +45,9 @@ body {
     }
   }
   .image {
-    background-color: #eee;
-    position: absolute;
-    right: 30px;
-    top: 0;
+    margin-top: -20px;
+    margin-right: -30px;
     padding: 10px;
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
   }
   .image image {
@@ -82,3 +90,63 @@ body {
 }
 
 //end car card
+
+//Start base info
+
+.base-info {
+  margin-top: 60px;
+  .header {
+    .header-title {
+      font-weight: bolder;
+      font-size: 30px;
+    }
+    .header-description {
+      width: 70%;
+      margin-left: 10px;
+    }
+  }
+
+  .details {
+    .item {
+      .item-header {
+        .icon {
+          font-size: 30px;
+        }
+        .item-title {
+          font-size: 25px;
+          font-weight: bold;
+          margin-left: 10px;
+        }
+      }
+      .item-description {
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+  .videos {
+    margin: 20px 50px;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 470px) {
+      margin: 20px 0;
+    }
+    .item {
+      p {
+        max-width: 70%;
+        @media (max-width: 500px) {
+          max-width: 100%;
+        }
+      }
+      @media (max-width: 470px) {
+        width: 95%;
+      }
+    }
+  }
+}
+//end base info

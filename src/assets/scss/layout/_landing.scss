@@ -3,7 +3,7 @@
   height: 70vh;
   width: 100vw;
   @media (max-width: 767px) {
-    padding-top: 80px;
+    padding-top: 20px;
     height: auto;
   }
 }
@@ -11,24 +11,40 @@
   padding-bottom: 120px;
   height: 100%;
   overflow: hidden;
+  @media (max-width: 992px) {
+    align-items: flex-end !important;
+  }
   @media (max-width: 767px) {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
 }
 .landing::before {
   content: '';
   position: absolute;
   background-color: $mainColor;
-  width: 2000px;
-  height: 2000px;
+  height: 1911px;
+  width: 1846px;
+  left: 42%;
+  top: -1301px;
   border-radius: 50%;
-  left: 400px;
-  top: -1800px;
   z-index: -10000;
-  transform: translate(300px, 500px);
   @media (max-width: 767px) {
-    display: none;
+    left: 10%;
   }
+  @media (max-width: 575px) {
+    position: relative;
+  }
+}
+.cirlce {
+  position: absolute;
+  right: 0;
+  width: 79%;
+  top: 0;
+  height: 424px;
+  z-index: -1;
 }
 .landing .text {
   flex: 1; // to make the text take same size same image
@@ -46,15 +62,11 @@
     max-width: 100%;
   }
 }
-.text-heading span {
-  color: $mainColor;
-}
 
 .landing .text .text-description {
-  opacity: 0.4;
   margin-left: 15px;
   line-height: 1.9;
-  font-size: 23px;
+  font-size: 21px;
   margin-top: 30px;
   margin-bottom: 10px;
   max-width: 700px;
@@ -65,7 +77,14 @@
 }
 .landing .image img {
   max-width: 600px;
-  width: 100%;
+  width: 500px;
+  flex: 1;
+  @media (max-width: 1200px) {
+    max-width: 530px;
+  }
+  @media (max-width: 992px) {
+    width: 400px;
+  }
 }
 .image {
   z-index: 10;

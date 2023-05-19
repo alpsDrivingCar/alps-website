@@ -2,11 +2,9 @@
 //import { useDispatch, useSelector } from 'react-redux';
 //import { RootState,AppDispatch } from './store/index';
 //import { fetchCount } from './store/counter/counterApi';
-import Header from './components/layout/header';
-import Landing from './components/homePage/landing';
-import HotOffer from './components/homePage/HotOffer';
-import CarCard from './components/homePage/carCard';
-function App() {
+import Header from '../components/layout/header';
+import {Outlet} from 'react-router-dom'
+function Root() {
   //const dispatch = useDispatch<AppDispatch>();
   //const counter:number = useSelector((state:RootState) => state.count.count);
 
@@ -17,10 +15,9 @@ function App() {
   return (
     <>
       <Header/>
-      <Landing/>
-      <HotOffer/>
-      <CarCard/>
+      <Outlet/>
+     
     </>
   )
 }
-export default App
+export default Root

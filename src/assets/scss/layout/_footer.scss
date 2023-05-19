@@ -1,0 +1,21 @@
+.top-footer {
+  background-color: $mainColor;
+}
+.footer-left {
+  h3,
+  p {
+    color: #fff;
+  }
+}
+
+form input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  background-color: inherit;
+}
+
+::placeholder {
+  color: #fff;
+}
