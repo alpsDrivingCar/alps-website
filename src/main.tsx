@@ -11,8 +11,8 @@ import { Provider } from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
-import Root from './routes/root.tsx';
-import Home from './routes/home.tsx';
+import Root from './routes/Root.tsx';
+import Home from './routes/Home.tsx';
 import ErrorPage from './routes/ErrorPage.tsx';
 
 library.add(fas);
